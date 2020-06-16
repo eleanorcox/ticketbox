@@ -1,6 +1,25 @@
-/* Site-Wide Styles */
-
-html {
+/* Add Your Code Here */
+input.required {
+    border-width: 2px;
+  }
+  
+  input.touched {
+    border-color: #bdbcbc;
+  }
+  
+  input.invalid {
+    background-color: #ffeded;
+    border-color: #da5252;
+  }
+  
+  button.active {
+    cursor: pointer;
+    background-color: #4c7ef3;
+  }
+  
+  /* Site-Wide Styles */
+  
+  html {
     font-size: 14px;
     font-family: 'Oxygen', sans-serif;
     background-color: #f9f9f9;
@@ -126,24 +145,48 @@ html {
   }
   
   button {
-    cursor: pointer;
+    cursor: default;
     padding: .85rem 2.29rem;
     border-radius: 4px;
     margin-right: 1.36rem;
-    background-color: #4c7ef3;
+    background-color: gray;
     font-size: 1.14rem;
     color: #ffffff;
     transition: .25s;
   }
   
-  button:hover {
+  button.active:hover {
     background-color: #1e5df1;
   }
   
   button.reset {
+    cursor: pointer;
     background-color: #e85b49;
   }
   
   button.reset:hover {
     background-color: #ea2e16;
+  }
+  
+  /* Developer Pane */
+  
+  #developer-pane {
+    border: 1px solid #979797;
+    margin: 2rem 20%;
+    background-color: #d1fdda;
+  }
+  
+  #developer-pane > * {
+    padding: 1rem;
+    font-weight: 1.2rem;
+  }
+  
+  #developer-pane h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  #developer-pane em {
+    font-weight: bold;
   }
